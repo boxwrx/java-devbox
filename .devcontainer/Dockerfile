@@ -16,11 +16,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # Add the current latest OpenJDK version along with Maven and Gradle
-RUN mapfile -t versions << ( \
+RUN mapfile -t versions < <( \
     apt-cache search --names-only '^openjdk-[0-9]+-jdk$' \
         | awk '{print $1}' \
         | grep -oP '(?<=^openjdk-)[0-9]+(?=-jdk$)' \
         | sort -n \
     ) \
     && sudo apt-get install -y "openjdk-${versions[-1]}-jdk" maven gradle \
-    && 
+    && rm -rf /var/lib/apt/lists/*
