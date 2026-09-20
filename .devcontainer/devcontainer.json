@@ -1,0 +1,12 @@
+{
+    "name": "Introduction to Java Devbox",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [  "oracle.oracle-java" ]
+        }
+    },
+    "postCreateCommand": "bash .devcontainer/patch-settings.sh"
+}

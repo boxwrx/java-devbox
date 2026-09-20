@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "jdk",
+      "name": "Debug HelloWorld (Maven build)",
+      "request": "launch",
+      "mainClass": "HelloWorld",
+      "preLaunchTask": "maven-build"
+    },
+    {
+      "type": "jdk",
+      "name": "Debug HelloWorld (Gradle build)",
+      "request": "launch",
+      "mainClass": "HelloWorld",
+      "preLaunchTask": "gradle-build"
+    },
+    {
+      "type": "jdk",
+      "name": "Debug HelloWorld (no build step)",
+      "request": "launch",
+      "mainClass": "HelloWorld"
+    }
+  ]
+}
