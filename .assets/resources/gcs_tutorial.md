@@ -26,10 +26,9 @@ Follow these steps to take care of it:
     If the script fails to complete, look at the file ~/setup.log for the details on what happened.
 1. Run the following four commands to verify the toolchain installation:
     <code><br>
-    gcc --version<br>
-    gdb --version<br>
-    clang --version<br>
-    lldb --version
+    java --version<br>
+    mvn --version<br>
+    gradle --version<br>
     </code>
 1. Make sure the Explorer panel is visible:
     in the vertical IDE <i>Activity Bar</i> at the left click on the <i>pages</i> icon at the top to
