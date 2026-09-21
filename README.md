@@ -13,6 +13,14 @@
 This is a general Java development environment designed to be cloud-hosted or started in a local docker container.
 It is purely an empty sandbox for playing with Java in Linux, and any subproject types: Spring, Spring Boot, etc.
 
+Note: this repository depends on the Oracle Java extension for Visual Studio Code.
+The project configuration adds JDK settings to the *.vscode/settings.json* file, which are interpreted by
+the extension.
+Because of this there will be a popup window to consent to the extension applying the project settings, which
+must be answered "yes":
+
+![Oracle VS Code Extension](./.assets/images/oracle-extension.png)
+
 In the *Terminal* tab of the *Panel* (the area below the *Editor* in VS Code), change directory to *src/main/java*.
 Compile *HelloWorld.java* with `javac HelloWorld.java`.
 This will leave the compiled program as *HelloWorld.class* in the same folder.
