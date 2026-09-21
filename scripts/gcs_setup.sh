@@ -34,10 +34,16 @@ latest="${versions[-1]}"
 package="openjdk-${latest}-jdk"
 
 sudo apt-get install -y "$package" maven gradle >> ${pwd}/scripts/setup.log 2>&1
-if ! sudo apt-get install -y --no-install-recommends "$package" maven gradle >> ${pwd}/scripts/setup.log 2>&1; then
+if ! sudo apt-get install -y --no-install-recommends "$package" maven >> ${pwd}/scripts/setup.log 2>&1; then
     echo "Failed to install Java build dependencies." | tee -a ${pwd}/scripts/setup.log
     exit 1
 fi
+
+GRADLE_VERSION=$(curl -fsSL https://services.gradle.org/versions/current | jq -r .version) \
+    && curl -fsSL -o /tmp/gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip" \
+    && sudo unzip -q /tmp/gradle.zip -d /opt \
+    && sudo ln -s "/opt/gradle-${GRADLE_VERSION}/bin/gradle" /usr/local/bin/gradle \
+    && rm /tmp/gradle.zip
 
 # Add VS Code extensions (if they are not alreay there). This is installing from a persistent workspace, so
 # the extensions are installed for the cloud shell and will persist across sessions.
