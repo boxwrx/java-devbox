@@ -8,14 +8,6 @@
       "args": ["compile"],
       "group": "build",
       "problemMatcher": []
-    },
-    {
-      "label": "gradle-build",
-      "type": "shell",
-      "command": "gradle",
-      "args": ["compileJava"],
-      "group": "build",
-      "problemMatcher": []
     }
   ]
 }

@@ -2,8 +2,8 @@
 [//]: # "Copyright © 2026 nTier Training. All rights reserved."
 [//]: #
 
-![Banner Light](../images/banner-clang-vde-small-light.png#gh-light-mode-only)
-![banner Dark](../images/banner-clang-vde-small-dark.png#gh-dark-mode-only)
+![Banner Light](../images/banner-java-vde-small-light.png#gh-light-mode-only)
+![banner Dark](../images/banner-java-vde-small-dark.png#gh-dark-mode-only)
 
 # Local Application Installation
 

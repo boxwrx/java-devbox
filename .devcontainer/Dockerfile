@@ -20,9 +20,3 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && echo "Installing $JDK" \
     && apt-get install -y --no-install-recommends "$JDK" maven \
     && rm -rf /var/lib/apt/lists/*
-
-RUN GRADLE_VERSION=$(curl -fsSL https://services.gradle.org/versions/current | jq -r .version) \
-    && curl -fsSL -o /tmp/gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip" \
-    && unzip -q /tmp/gradle.zip -d /opt \
-    && ln -s "/opt/gradle-${GRADLE_VERSION}/bin/gradle" /usr/local/bin/gradle \
-    && rm /tmp/gradle.zip

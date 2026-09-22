@@ -8,10 +8,11 @@
     A <a href="https://github.com/boxwrx">Box Works</a> Coding Environment<img alt="Box Logo" src="./.assets/images/box-small.png" />
 </div>
 
-# Introduction
+# Introduction (Maven build)
 
 This is a general Java development environment designed to be cloud-hosted or started in a local docker container.
 It is purely an empty sandbox for playing with Java in Linux, and any subproject types: Spring, Spring Boot, etc.
+This repository is configured with *pom.xml* for using *Maven* to build the project.
 
 Note: this repository depends on the Oracle Java extension for Visual Studio Code.
 The project configuration adds JDK settings to the *.vscode/settings.json* file, which are interpreted by
@@ -31,9 +32,9 @@ and *tasks.json* files that build and run *src/main/java/HelloWorld.java*.
 Clicking on the *Run and Debug* icon in the *Activity bar* at the left opens the *Run and Debug* view in the
 *Side bar* to the right of the *Activity bar*.
 At the top of the view is a dropdown list of *launch configurations*.
-There are three configurations: *Debug HelloWorld (Maven build)*, *Debug HelloWorld (Gradle build)*, and
+There are two configurations: *Debug HelloWorld (Maven build)* and
 *Debug HelloWorld (no build step)*.
-Pick the *Maven* or *Gradle* option and launch the debugger with the run button to the left of the dropdown, or
+Pick the *Maven* option and launch the debugger with the run button to the left of the dropdown, or
 from the menu pick <code>Run &rarr; Start Debugging</code> or <code>Run &rarr; Run Without Debugging</code>.
 
 The default *launch.json* configuration is the template to build configurations for running and debugging any other program files in

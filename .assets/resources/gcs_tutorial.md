@@ -2,11 +2,9 @@
 [//]: # (Copyright © 2026 nTier Training. All rights reserved.)
 [//]: #
 
-![Banner Light](../images/banner-clang-vde-small-light.png)
-
 # Setup Instructions
 
-This starter development environment for C/C++ has been loaded here into Google Cloud Shell, a Debian-based virtual container.
+This starter development environment for Java has been loaded here into Google Cloud Shell, a Debian-based virtual container.
 Warning: this is an ephemeral virtual computer and any work you do will be erased when the Google Cloud Shell ends.
 Google sets the maximum idle time to 40 minutes, and the maximum elapsed time to twelve hours.
 
