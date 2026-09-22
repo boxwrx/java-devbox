@@ -39,8 +39,8 @@ from the menu pick <code>Run &rarr; Start Debugging</code> or <code>Run &rarr; R
 
 The default *launch.json* configuration is the template to build configurations for running and debugging any other program files in
 the project.
-This environment is configured to use either Maven or Gradle.
-Maven builds the project to the /target folder, while Gradle puts it together in /build.
+This environment is configured to use Maven.
+Maven builds the project to the */target* folder.
 
 ## Sandbox Instantiation
 
